@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import NavBar from "./NavBar.jsx";
 import AccountDetails from "./AccountDetails.jsx";
 import data from "./data.js";
+import bestbanklogo from "/src/assets/bestbank_logo.png";
 
 export default function App() {
   const [financialData, setFinancialData] = useState(data);
@@ -35,7 +36,7 @@ export default function App() {
   return (
     <div>
       <header>
-        <img className="bank-logo" src="./src/assets/bestbank_logo.png" />
+        <img className="bank-logo" src={bestbanklogo} />
       </header>
       <NavBar />
       <AccountDetails
